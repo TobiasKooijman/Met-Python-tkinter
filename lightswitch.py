@@ -3,7 +3,7 @@ window = tk.Tk()
 
 turned = 0
 buttonstat = "Off"
-
+window.config(bg="black")
 # schijf hier tussen je code
 
 def switch():
@@ -19,7 +19,7 @@ def switch():
         button.config(text = "Lightswitch: On")
         print("The light is on")
     if turned == 0:
-        mywindow = window.config(bg="white")
+        mywindow = window.config(bg="black")
         button.config(text='Lightswitch: Off')
         print("The light is off")
     return buttonstat
